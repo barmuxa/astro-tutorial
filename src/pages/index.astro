@@ -1,5 +1,7 @@
 ---
+import Navigation from '../components/Navigation.astro';
 import '../styles/global.css';
+
 const pageTitle = 'Home Page';
 ---
 
@@ -11,10 +13,9 @@ const pageTitle = 'Home Page';
       content="width=device-width"
     />
     <title>{pageTitle}</title>
-  </head><body>
-    <a href="/">Home</a>
-    <a href="/about/">About</a>
-    <a href="/blog/">Blog</a>
+  </head>
+  <body>
+    <Navigation />
     <h1>{pageTitle}</h1>
   </body>
 </html>
